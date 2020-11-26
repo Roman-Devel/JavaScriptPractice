@@ -58,3 +58,40 @@ console.log(longString.slice(5, 16));
 console.log(longString.slice(5));
 
 /* ------------------------------- */
+
+/* ----- To Upper Case / To Lower Case ----- */
+
+const mainString = 'hEY, hOW arE YOU?',
+	  mainString1 = mainString[0].toUpperCase(),
+	  mainString2 = mainString.slice(1).toLowerCase();
+
+console.log(mainString1 + mainString2);
+
+/* ----------------------------------------- */
+
+/* ----- Boolean Values ----- */
+
+	/* && - AND */
+	const hadShower = true,
+		  hasBackPack = false;
+	if (hadShower && hasBackPack) {
+		console.log(true);
+	} else {
+		console.log(false);
+	}
+
+	/* || - OR */
+	const hasApple = true,
+		  hasOrange = false;
+	if (hasApple || hasOrange) {
+		console.log(true);
+	} else {
+		console.log(false);
+	}
+
+	/* ! - NOT */
+	const isWeekend = true,
+		  needToShowerToday = !isWeekend;
+	console.log(needToShowerToday);
+
+/* -------------------------- */
