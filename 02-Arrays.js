@@ -35,3 +35,16 @@ const dinosaursAndNumbers = [
 
 console.log(dinosaursAndNumbers[2]);
 console.log(dinosaursAndNumbers[2][1]);
+
+/* ----- Search last element of array ----- */
+
+const maniacs = [
+    'Ronus',
+    'Andrey',
+    'Max'
+];
+console.log(maniacs[0]);
+console.log(maniacs[1]);
+console.log(maniacs[2]);
+    console.log(maniacs.length);
+    console.log(maniacs[maniacs.length - 1]);
