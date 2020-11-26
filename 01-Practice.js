@@ -95,3 +95,16 @@ console.log(mainString1 + mainString2);
 	console.log(needToShowerToday);
 
 /* -------------------------- */
+
+/* ----- Matching numbers ----- */
+
+const age = 11,
+	  accompanied = true;
+
+if (age >= 12 || accompanied === true) {
+	console.log('Welcome to the cinema');
+} else {
+	console.log('Get out of here!');
+}
+
+/* ---------------------------- */
