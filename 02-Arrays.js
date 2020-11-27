@@ -77,3 +77,16 @@ console.log(maniacs[2]);
 	const firstFruit = fruits.shift();
 		console.log(firstFruit);
 		console.log(fruits);
+
+/* ----- Combining Arrays ----- */
+	/*
+	.concat() - к текущему массиву добавляет в конец массивы в скобках через запятую
+	*/
+const furryAnimals = ['FirstAnimal', 'SecondAnimal', 'ThirdAnimal'],
+	  scalyAnimals = ['FourthAnimal', 'FifthAnimal'],
+	  furryAndScalyAnimals = furryAnimals.concat(scalyAnimals);
+console.log(furryAndScalyAnimals);
+
+const featheredAnimals = ['SixthAnimal', 'SeventhAnimal'],
+	  allAnimals = furryAnimals.concat(scalyAnimals, featheredAnimals);
+console.log(allAnimals);
