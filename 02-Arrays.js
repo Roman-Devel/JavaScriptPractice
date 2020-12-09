@@ -90,3 +90,45 @@ console.log(furryAndScalyAnimals);
 const featheredAnimals = ['SixthAnimal', 'SeventhAnimal'],
 	  allAnimals = furryAnimals.concat(scalyAnimals, featheredAnimals);
 console.log(allAnimals);
+
+/* ----- Searching index of elements ----- */
+
+const colors = ['red', 'blue', 'green'];
+	console.log(colors.indexOf('blue'));
+	console.log(colors.indexOf('green'));
+	console.log(colors.indexOf('purple'));					/* если элемента нет в массиве, метод вернет -1 */
+const colors2 = ['yellow', 'gray', 'white', 'yellow'];
+	console.log(colors2.indexOf('yellow'));					/* если элемент повторяется, метод вернет позицию ближайшего к началу массива */
+
+/* ----- Convert array to string ----- */
+
+/*
+join() - метод, возвращает строку элементов массива через запятую
+join(' - ') - добавляет нужный разделитель между элементами
+*/
+
+const boringAnomals = ['monkey', 'cat', 'fish', 'bird'];
+	console.log(boringAnomals.join());
+	console.log(boringAnomals.join(' - '));
+	console.log(boringAnomals.join('*'));
+	console.log(boringAnomals.join(' and '));
+
+/* Example */
+
+/* Путь к подруге домой и обратно к себе домой */
+
+const landmarks = [];
+landmarks.push('My home');
+landmarks.push('Way to home');
+landmarks.push('Light');
+landmarks.push('River');
+landmarks.push('Old school');
+landmarks.push('City library');
+landmarks.push("Girlfriend's home");
+	console.log(landmarks.pop());
+	console.log(landmarks.pop());
+	console.log(landmarks.pop());
+	console.log(landmarks.pop());
+	console.log(landmarks.pop());
+	console.log(landmarks.pop());
+	console.log(landmarks.pop());
