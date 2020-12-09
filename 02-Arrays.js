@@ -133,7 +133,7 @@ const boringAnomals = ['monkey', 'cat', 'fish', 'bird'];
 		console.log(landmarks.pop());
 		console.log(landmarks.pop());
 
-/* ----- Random choose ----- */
+/* ----- Random choice ----- */
 
 /*
 Math.random() - возвращает случайное число от 0 до 1. Всегда возвращает < 1 и никогда не возвращает 1.
@@ -172,3 +172,16 @@ const 	randomWords = ['Explosive', 'Pencil', 'Baloon', 'Happy'],
 		  randomBodyPartAnimal = bodyPartAnimal[Math.floor(Math.random() * bodyPartAnimal.length)],
 		  randomAnimal = animal[Math.floor(Math.random() * animal.length)];
 	console.log(`У тебя ${randomBodyPart} еще более ${randomAdjective}, чем ${randomBodyPartAnimal} у ${randomAnimal}`);
+
+	/* Task 1 (2) */
+	const bodyPart2 = ['нос', 'рука', 'ухо', 'шея'],
+		  adjective2 = ['ужасен(-а)', 'вонючий(-ая)', 'унылый(-ая)', 'дурацкий(-ая)'],
+		  bodyPartAnimal2 = ['морда', 'пяточек', 'хвост', 'лапа'],
+		  animal2 = ['собаки', 'лошади', 'обезьяны', 'ящерицы'],
+
+		  randomBodyPart2 = bodyPart2[Math.floor(Math.random() * bodyPart2.length)],
+		  randomAdjective2 = adjective2[Math.floor(Math.random() * adjective2.length)],
+		  randomBodyPartAnimal2 = bodyPartAnimal2[Math.floor(Math.random() * bodyPartAnimal2.length)],
+		  randomAnimal2 = animal2[Math.floor(Math.random() * animal2.length)],
+		  specialArray = ['У тебя', randomBodyPart2, 'еще более', randomAdjective2 + ', чем', randomBodyPartAnimal2, 'у', randomAnimal2];
+	console.log(specialArray.join(' '));
