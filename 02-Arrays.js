@@ -113,22 +113,62 @@ const boringAnomals = ['monkey', 'cat', 'fish', 'bird'];
 	console.log(boringAnomals.join('*'));
 	console.log(boringAnomals.join(' and '));
 
-/* Example */
+	/* Example */
 
-/* Путь к подруге домой и обратно к себе домой */
+	// Путь к подруге домой и обратно к себе домой
 
-const landmarks = [];
-landmarks.push('My home');
-landmarks.push('Way to home');
-landmarks.push('Light');
-landmarks.push('River');
-landmarks.push('Old school');
-landmarks.push('City library');
-landmarks.push("Girlfriend's home");
-	console.log(landmarks.pop());
-	console.log(landmarks.pop());
-	console.log(landmarks.pop());
-	console.log(landmarks.pop());
-	console.log(landmarks.pop());
-	console.log(landmarks.pop());
-	console.log(landmarks.pop());
+	const landmarks = [];
+	landmarks.push('My home');
+	landmarks.push('Way to home');
+	landmarks.push('Light');
+	landmarks.push('River');
+	landmarks.push('Old school');
+	landmarks.push('City library');
+	landmarks.push("Girlfriend's home");
+		console.log(landmarks.pop());
+		console.log(landmarks.pop());
+		console.log(landmarks.pop());
+		console.log(landmarks.pop());
+		console.log(landmarks.pop());
+		console.log(landmarks.pop());
+		console.log(landmarks.pop());
+
+/* ----- Random choose ----- */
+
+/*
+Math.random() - возвращает случайное число от 0 до 1. Всегда возвращает < 1 и никогда не возвращает 1.
+Math.floor()  - округление числа, просто отбрасывает все знаки после запятой
+*/
+
+console.log(Math.floor(Math.random() * 10));
+console.log(Math.floor(Math.random() * 10));
+console.log(Math.floor(Math.random() * 10));
+
+const 	randomWords = ['Explosive', 'Pencil', 'Baloon', 'Happy'],
+		randomIndex = Math.floor(Math.random() * 4);
+	console.log(randomWords[randomIndex]);
+
+	/* Example */
+	const russianPhrases = [
+		'Звучит неплохо',
+		'Да, это определенно надо сделать',
+		'Не думаю, что это хорошая идея',
+		'Может, не сегодня?',
+		'Компьютер говорит нет'
+	];
+	// Мне выпить еще молочного коктейля?
+	console.log(russianPhrases[Math.floor(Math.random() * 5)]);
+	// Мне пора делать домашнюю работу?
+	console.log(russianPhrases[Math.floor(Math.random() * 5)]);
+	
+	/* Task 1 (1) */
+	const bodyPart = ['нос', 'рука', 'ухо', 'шея'],
+		  adjective = ['ужасен(-а)', 'вонючий(-ая)', 'унылый(-ая)', 'дурацкий(-ая)'],
+		  bodyPartAnimal = ['морда', 'пяточек', 'хвост', 'лапа'],
+		  animal = ['собаки', 'лошади', 'обезьяны', 'ящерицы'],
+
+		  randomBodyPart = bodyPart[Math.floor(Math.random() * bodyPart.length)],
+		  randomAdjective = adjective[Math.floor(Math.random() * adjective.length)],
+		  randomBodyPartAnimal = bodyPartAnimal[Math.floor(Math.random() * bodyPartAnimal.length)],
+		  randomAnimal = animal[Math.floor(Math.random() * animal.length)];
+	console.log(`У тебя ${randomBodyPart} еще более ${randomAdjective}, чем ${randomBodyPartAnimal} у ${randomAnimal}`);
